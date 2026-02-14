@@ -72,7 +72,9 @@
 			// Upload image if provided
 			let imageUrl: string | null = null;
 			if (imageFile) {
+				console.log('Uploading image:', imageFile);
 				imageUrl = await uploadImage(imageFile);
+				console.log('Image uploaded, URL:', imageUrl);
 			}
 
 			// Create item
